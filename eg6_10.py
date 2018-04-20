@@ -1,0 +1,25 @@
+import os, sys, glob
+for k, v in os.environ.items():
+    print("%s=%s" % (k, v))
+print("======================")
+print("\n".join(["%s=%s" % (k, v) for k, v in os.environ.items()]))
+print('\n'.join(sys.modules.keys()))
+print("======================")
+import eg5_1_file
+print('\n'.join(sys.modules.keys()))
+print("======================")
+print(eg5_1_file)
+print(sys.modules["eg5_1_file"])
+print("======================")
+from eg5_1_file import MP3FileInfo
+print(MP3FileInfo.__module__)
+print(sys.modules[MP3FileInfo.__module__])
+print("======================")
+print(os.path.expanduser("~"))
+print("======================")
+print(os.path.join("f:\\Ishare\\DiveIntoPython\\MP3", "1.mp3"))
+print(os.path.split("f:\\Ishare\\DiveIntoPython\\MP3\\1.mp3"))
+print(os.path.splitext("1.mp3"))
+print(os.listdir("f:\\Ishare\\DiveIntoPython\\"))
+print("======================")
+print(glob.glob("f:\\Ishare\\DiveIntoPython\\MP3\\*.mp3"))
