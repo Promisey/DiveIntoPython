@@ -104,3 +104,6 @@ venv.bak/
 .mypy_cache/
 
 eg5_1_fileinfo.py
+MP3
+.idea
+__pycache__
